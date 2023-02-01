@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 3,
+    "articles": [
+      {
+        "source": {
+          "id": "bbc-news",
+          "name": "BBC News"
+        },
+        "author": "BBC News",
+        "title": "These Canadians are unfazed by new drink guidelines",
+        "description": "New guidance in Canada says no alcohol is best and two drinks maximum each week is deemed low-risk.",
+        "url": "http://www.bbc.co.uk/news/world-us-canada-64322118",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/B7EB/production/_128338074_p0dx597r.jpg",
+        "publishedAt": "2023-01-19T11:22:16.00956Z",
+        "content": "New national recommendations in Canada that say abstaining from alcohol is the only risk-free approach.\r\nBut if a person chooses to consume, two drinks maximum each week is deemed low-risk by the gov… [+217 chars]"
+      },
+      {
+        "source": {
+          "id": "bbc-news",
+          "name": "BBC News"
+        },
+        "author": "BBC News",
+        "title": "How to be a more environmentally friendly coffee drinker",
+        "description": "A new study shows that coffee capsules are not as harmful to the environment as once thought.",
+        "url": "http://www.bbc.co.uk/news/world-us-canada-64293750",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/16638/production/_128340719_gettyimages-1270706124.jpg",
+        "publishedAt": "2023-01-19T02:37:19.1823228Z",
+        "content": "When it comes to making a cup of coffee, capsules have a reputation for being environmentally unfriendly, as they are often hard to recycle. \r\nBut new research by the University of Quebec in Canada s… [+4248 chars]"
+      },
+      {
+        "source": {
+          "id": "bbc-news",
+          "name": "BBC News"
+        },
+        "author": "BBC News",
+        "title": "New Zealand PM Ardern to step down next month",
+        "description": "'I no longer have enough in the tank' - an emotional Jacinda Ardern says she will quit next month as New Zealand PM",
+        "url": "http://www.bbc.co.uk/news/world-asia-64327224",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/83B3/production/_115651733_breaking-large-promo-nc.png",
+        "publishedAt": "2023-01-19T00:37:23.1214489Z",
+        "content": "\"I no longer have enough in the tank\" - an emotional Jacinda Ardern says she will quit next month as New Zealand PM.\r\nThe 42-year-old said almost six \"challenging\" years in the job had taken a toll.\r… [+494 chars]"
+      }
+    ]
+  }
