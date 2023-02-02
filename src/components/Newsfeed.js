@@ -14,13 +14,14 @@ export class Newsfeed extends Component {
     let {title, description, imageUrl, newsUrl, author, datime} = this.props;
     return (
       <div>
-         <div className="card" style={{width: '20rem', height: '25rem'}}>
+         <div className="card" style={{width: '20rem', height: '28rem'}}>
         <img src={imageUrl} className="card-img-top" alt="..." width="320px" height="180px"/>
         <div className="card-body">
+          <p  className="text-secondary"><small>{timeAgo.format(new Date(datime))}</small></p>
             <h6 className="card-title text-justify">{title}...</h6>
             <p className="card-text-justify">{description}...</p>
-            <p className="card-text-justify font-weight-bold"><small className="text-muted">By {!author?"Unknown":author} on {timeAgo.format(new Date(datime))}</small></p>
-            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sn btn-primary">Read More</a>
+            <p className="card-text-justify font-weight-bold"><small className="text-muted">By <b>{!author?"Unknown":author}</b></small></p>
+            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sn btn-dark">Read More</a>
         </div>
         </div>
       </div>

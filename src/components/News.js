@@ -95,7 +95,7 @@ export class News extends Component {
   render() {
     return (
       <>
-         <h2 className='text-center'>Top {this.props.category} News</h2>
+         <h2 className='text-center' style={{ margin: '35px 0px', marginTop: '90px' }}>Top {this.props.category} News</h2>
 
          <InfiniteScroll
           dataLength={this.state.articles.length}
@@ -107,7 +107,7 @@ export class News extends Component {
          <div className="row">
          {this.state.articles.map((element)=>{
           return <div className="col-md-4 d-flex justify-content-center" key={element.url}>
-          <Newsfeed title={element.title?element.title.slice(0,45):""} description={element.description?element.description.slice(0,45):""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} datime={element.publishedAt}/>
+          <Newsfeed title={element.title?element.title.slice(0,55):""} description={element.description?element.description.slice(0,45):""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} datime={element.publishedAt}/>
           </div>
          })} 
         {/* </div>
