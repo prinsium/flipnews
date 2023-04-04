@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar';
-// import ReactDOM from 'react-dom/client';
 import React, { Component } from 'react'
 import News from './components/News';
 import LoadingBar from 'react-top-loading-bar'
