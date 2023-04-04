@@ -51,32 +51,32 @@ export class News extends Component {
       this.updatepage();
     }
 
-    handlePrevClick = async()=>{
-    //   let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fa79feb238654e7888953c6c2382ec8e&page=${this.state.page -1}`;
-    //   let data= await fetch(url);
-    //   let parsedData= await data.json();
-    //   console.log(parsedData);
+  //   handlePrevClick = async()=>{
+  //   //   let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fa79feb238654e7888953c6c2382ec8e&page=${this.state.page -1}`;
+  //   //   let data= await fetch(url);
+  //   //   let parsedData= await data.json();
+  //   //   console.log(parsedData);
 
-    //  this.setState({
-    //   page: this.state.page +1,
-    //   articles: parsedData.articles
-    // })
-    this.setState({page: this.state.page -1});
-    this.updatepage();
-  }
-    handleNextClick =async ()=>{
-    //   let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fa79feb238654e7888953c6c2382ec8e&page=${this.state.page +1}`;
-    //   let data= await fetch(url);
-    //   let parsedData= await data.json();
-    //   console.log(parsedData);
+  //   //  this.setState({
+  //   //   page: this.state.page +1,
+  //   //   articles: parsedData.articles
+  //   // })
+  //   this.setState({page: this.state.page -1});
+  //   this.updatepage();
+  // }
+  //   handleNextClick =async ()=>{
+  //   //   let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fa79feb238654e7888953c6c2382ec8e&page=${this.state.page +1}`;
+  //   //   let data= await fetch(url);
+  //   //   let parsedData= await data.json();
+  //   //   console.log(parsedData);
 
-    //  this.setState({
-    //   page: this.state.page +1,
-    //   articles: parsedData.articles
-    // }) 
-    this.setState({page: this.state.page +1});
-    this.updatepage();
-    }
+  //   //  this.setState({
+  //   //   page: this.state.page +1,
+  //   //   articles: parsedData.articles
+  //   // }) 
+  //   this.setState({page: this.state.page +1});
+  //   this.updatepage();
+  //   }
 
     fetchMoreData =async ()=>{
       this.setState({page: this.state.page+1})
@@ -95,14 +95,16 @@ export class News extends Component {
   render() {
     return (
       <>
-         <h2 className='text-center' style={{ margin: '35px 0px', marginTop: '90px' }}>Top {this.props.category} News</h2>
+      <div className="container-fluid bg-dark" >
+         <h2 className='text-center' style={{ margin: '35px 0px', marginTop: '55px' }}>Top {this.props.category} News</h2>
 
          <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
           hasMore={this.state.articles.length !== this.state.totalResults}
-          loader={<h6 className='my-3'>Loading More News...</h6>}
+          loader={<h6 className='my-3 text-center'>Loading More News...</h6>}
         >
+
           <div className="container">
          <div className="row">
          {this.state.articles.map((element)=>{
@@ -119,7 +121,7 @@ export class News extends Component {
        </div> 
        </div>
        </InfiniteScroll>
-
+       </div>
       
       {/* the below buttons were for next page and previous page but now I'm using infinite scroll so I'm not using it */}
        {/* <div className="container d-flex justify-content-end">

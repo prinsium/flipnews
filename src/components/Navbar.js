@@ -1,6 +1,7 @@
 // import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import logo from './flipnews.png'
 
 export class Navbar extends Component {
 
@@ -9,12 +10,17 @@ export class Navbar extends Component {
       <div>
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <Link className="navbar-brand" to='/general'>FlipNews</Link>
+  <div className='d-flex flex-row m-1 align-self-center'>
+    <Link className="navbar-brand" to='/general'>  
+    <img src={logo} alt="Logo" height="35" className="d-inline-block" />
+    &nbsp;&nbsp;FlipNews
+    </Link>
+    </div>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-3 mb-lg-0">
+      <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link" aria-current="page" to='/general'>Home</Link></li>
         <li className="nav-item"><Link className="nav-link" to='/business'>Business</Link></li>
